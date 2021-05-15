@@ -1,0 +1,150 @@
+body {
+    background-color: #2E8BC0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.title {
+    margin-left: 7%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 5%;
+    
+}
+
+nav a {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 2em;
+    text-align: center;
+    background-color: transparent;
+    background-size: 0 100%;
+    transition: background-color .3s;
+}
+
+nav a:hover {
+    background-color:#0C2D48;
+    background-size: 100% 100%;
+}
+
+.container {
+    width: 60%;
+    margin-right: 50px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+}
+
+p {
+    font-size: x-large;
+    text-align: center;
+}
+
+.card {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 2px 2px 4px 2px #145DA0;
+}
+
+.card p {
+    
+    text-align: left;
+    font-size:medium;
+}
+
+.card-info {
+    width: 30%;
+}
+
+button {
+    cursor: pointer;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 2%;
+    font-size: 45px;
+    transition: font-size .5s ease-in-out;
+}
+
+.buttons {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.github:hover {
+    color: #840584;
+    font-size: 55px;
+}
+
+.site:hover {
+    color:darkgoldenrod;
+    font-size: 50px;
+}
+
+iframe {
+    margin-left: 20%;
+    width: 60%;
+    height: 1150px;
+}
+
+.info {
+    width: 50%;
+    color: white;
+    font-size: 2em;
+    margin-left: 35%;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+#ext {
+    font-size: x-small;
+}
