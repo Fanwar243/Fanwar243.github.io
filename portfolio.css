@@ -52,6 +52,8 @@ nav a:hover {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     width: 60%;
     margin-right: 50px;
 }
@@ -85,25 +87,12 @@ p {
 }
 
 .card p {
-    
     text-align: left;
     font-size:medium;
 }
 
 .card-info {
     width: 30%;
-}
-
-button {
-    cursor: pointer;
-    border-style: solid;
-    border-color: black;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    margin: 2%;
-    font-size: 45px;
-    transition: font-size .5s ease-in-out;
 }
 
 .buttons {
@@ -113,14 +102,27 @@ button {
     margin-right: auto;
 }
 
+.buttons a {
+    cursor: pointer;
+    border-style: none;
+    border-color: transparent;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 2%;
+    font-size: 50px;
+    transition: font-size .5s ease-out;
+    color: darkgray;
+}
+
 .github:hover {
     color: #840584;
-    font-size: 55px;
+    font-size: 60px;
 }
 
 .site:hover {
     color:darkgoldenrod;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 iframe {
