@@ -20,7 +20,7 @@ main {
     font-size: 3em;
     font-weight: bold;
     margin: auto;
-    background-image: linear-gradient(to top right, #dd9b87, #dd87b6);
+    background-image: linear-gradient(to right, #cc00cc, #dd9b87);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -50,9 +50,8 @@ h2 {
 
 .overlay:hover {
     width: 60%;
-    /*transform: rotate(60deg);*/
     border-radius: 0%;
-    /*border-radius: 19% 81% 41% 59% / 63% 21% 79% 37% ;*/
+    border-radius: 7% 93% 10% 90% / 76% 10% 90% 24% ;
 }
 
 .flex-container {
@@ -112,7 +111,7 @@ p {
 }
 
 .card {
-    width: 80%;
+    width: 60%;
     margin: auto;
     margin-bottom: 5%;
     padding: 3%;
@@ -171,9 +170,21 @@ iframe {
 
 .info {
     width: 50%;
-    color: white;
-    font-size: 2em;
-    margin-left: 35%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 4%;
+    text-align: center;
+    background-image: linear-gradient(to top left, #DD878B, #dd87ad);
+    border-radius: 30% 70% 20% 80% / 85% 65% 35% 15%;
+    transition: .5s ease-in-out;
+}
+
+.info:hover {
+    width: 60%;
+    /*transform: rotate(60deg);*/
+    border-radius: 0%;
+    border-radius: 5% 95% 7% 93% / 89% 11% 89% 11% ;
 }
 
 .info a {
