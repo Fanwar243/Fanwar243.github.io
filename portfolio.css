@@ -12,6 +12,8 @@ body {
 main {
     background-image: url(images/Liquid-pattern-8.jpg);
     background-size: 200%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .header {
@@ -64,8 +66,8 @@ nav {
     flex-direction: row;
     margin: auto;
     width: 80%;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
     
 }
 
