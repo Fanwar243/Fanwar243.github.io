@@ -22,15 +22,43 @@
 
             <div class="info">
                 <h1>Get in touch.</h1>
-                <span><i class="fas fa-envelope-square" aria-hidden="true"></i> faridanwar243@gmail.com</span>
-                <br><br>
-                <span><i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/Fanwar243/Fanwar243" target="_blank">Fanwar243</a><sup><i id="ext" class="fas fa-external-link-alt"></i></sup></span>
-                <br><br>
-                <span><i class="fas fa-phone" aria-hidden="true"></i> +60193275277</span>
-                <br><br>
-                <span><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="www.linkedin.com/in/faridanwar243"> LinkedIn</a></span>
+                <ul class="contact-details">
+                    <li>
+                        <span onclick="copy()">
+                            <i class="fas fa-envelope-square" aria-hidden="true"></i> 
+                            <span id="email">faridanwar243@gmail.com</span>
+                            <i class="far fa-copy" id="clipboard"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                            <a href="https://github.com/Fanwar243/Fanwar243" target="_blank">Fanwar243</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span onclick="copy()">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            +60193275277
+                        </span>
+                    </li>
+                    <li>
+                        <span>
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            <a href="https://linkedin.com/in/faridanwar243" target="_blank"> LinkedIn</a>
+                        </span>
+                    </li>
+                </ul>
             </div>
             
         </main>
+        <script>
+            function copy() {
+                copyText = document.getElementById("email");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                document.execCommand("copy");
+            }
+        </script>
     </body>
 </html>
