@@ -33,7 +33,20 @@ h2 {
 }
 
 .title {
-    margin-left: 7%;
+    width: 100%;
+    background-image: linear-gradient(to top, gainsboro, white);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+@keyframes blob {
+    0% {border-radius: 71% 29% 70% 30% / 24% 65% 35% 76%}
+    25% {border-radius: 34% 66% 42% 58% / 51% 47% 53% 49% }
+    50% {border-radius: 34% 66% 42% 58% / 26% 73% 27% 74%}
+    75% {border-radius: 63% 37% 54% 46% / 26% 47% 53% 74% }
+    100% {border-radius: 71% 29% 70% 30% / 24% 65% 35% 76%}
 }
 
 .overlay {
@@ -42,16 +55,16 @@ h2 {
     margin: auto;
     text-align: center;
     background-image: linear-gradient(#DD878B, #dd87ad);
-    padding: 5%;
+    padding: 8%;
     padding-top: 2%;
-    border-radius: 71% 29% 70% 30% / 24% 65% 35% 76% ;
-    transition: .5s ease-in-out;
+    border-radius: 71% 29% 70% 30% / 24% 65% 35% 76%;
 }
 
 .overlay:hover {
-    width: 60%;
-    border-radius: 0%;
-    /*border-radius: 7% 93% 10% 90% / 76% 10% 90% 24% ;*/
+    animation: blob 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .flex-container {
@@ -100,15 +113,13 @@ img {
     border: 1px solid black;
 }
 
-
-
 p {
     font-size: x-large;
     text-align: center;
 }
 
 .card {
-    width: 60%;
+    width: 75%;
     margin: auto;
     margin-bottom: 5%;
     padding: 3%;
@@ -144,19 +155,19 @@ p {
     width: 80px;
     height: 80px;
     margin: 2%;
-    font-size: 1.2em;
+    font-size: 2.5em;
     transition: font-size .5s ease-out;
     color: darkgray;
 }
 
 .github:hover {
     color: #840584;
-    font-size: 1.8em;
+    font-size: 3em;
 }
 
 .site:hover {
     color:darkgoldenrod;
-    font-size: 1.8em;
+    font-size: 3em;
 }
 
 iframe {
@@ -171,15 +182,9 @@ iframe {
     margin-top: 5%;
     margin-bottom: 15%;
     padding: 4%;
+    padding-top: 1%;
     text-align: center;
     background-image: linear-gradient(to top left, #DD878B, #dd87ad);
-    border-radius: 30% 70% 20% 80% / 85% 65% 35% 15%;
-    transition: .5s ease-in-out;
-}
-
-.info:hover {
-    width: 60%;
-    border-radius: 0%;
 }
 
 .info a {
@@ -209,16 +214,10 @@ iframe {
     color:#2C1443;
 }
 
-.info:hover > ul {
-    display: block;
-    transition: display 0.5s;
-}
-
 .contact-details {
     width: 100%;
     margin-left: 20%;
     text-align: left;
-    display: none;
 }
 
 .contact-details li {
@@ -230,3 +229,43 @@ iframe {
     font-size: 2em;
 }
 
+@media screen and (max-device-width: 900px) and (orientation:portrait) {
+    body {
+        font-size: 0.8em;
+    }
+
+    .card {
+        width: 75%;
+        margin: auto;
+        margin-bottom: 5%;
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+        color: black;
+        box-shadow: 2px 2px 4px 2px black;
+        font-size:medium
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 50px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+    
+    .card p {
+        text-align: left;
+        font-size:medium;
+    }
+    
+    .card-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
