@@ -183,7 +183,8 @@ iframe {
     margin-bottom: 15%;
     padding: 4%;
     padding-top: 1%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     background-image: linear-gradient(to top left, #DD878B, #dd87ad);
 }
 
@@ -234,6 +235,17 @@ iframe {
         font-size: 0.8em;
     }
 
+    .overlay {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .overlay p {
+        font-size: small;
+        margin-top: 10%;
+    }
+
     .card {
         width: 75%;
         margin: auto;
@@ -267,5 +279,18 @@ iframe {
         width: 100%;
         display: flex;
         flex-direction: row;
+    }
+
+    .info {
+        width:80%;
+        font-size: smaller;
+    }
+
+    .info ul {
+        margin-left: 5%;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
