@@ -8,7 +8,7 @@ body {
 main {
     background-image: url(images/Liquid-pattern-8.jpg);
     background-size: 200%;
-    padding-top: 10%;
+    padding-top: 3%;
     padding-bottom: 10%;
     width: 100%;
     margin: auto;
@@ -262,7 +262,7 @@ embed {
         background-color: whitesmoke;
         color: black;
         box-shadow: 2px 2px 4px 2px black;
-        font-size:medium
+        font-size: small;
     }
 
     .container {
@@ -278,7 +278,7 @@ embed {
     
     .card p {
         text-align: left;
-        font-size:medium;
+        font-size: small;
     }
     
     .card-info {
