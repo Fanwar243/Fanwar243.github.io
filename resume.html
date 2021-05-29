@@ -14,7 +14,15 @@
             <a href="resume.html">Resume</a>
         </nav>
         <main>
-            <iframe id="resume" onclick="" src="Web Dev Resume.pdf" style="border:none" title="Resume"></iframe>
+            <img id="resume" src="images/Web Dev Resume.png">
         </main>
+
+        <script>
+            let iframe = document.getElementById("resume");
+            iframe.onload = function() {
+                iframe.style.height = iframe.contentWindow.document.body.scrollHeight;
+                iframe.style.width = iframe.contentWindow.document.body.scrollWidth;
+            }
+        </script>
     </body>
 </html>

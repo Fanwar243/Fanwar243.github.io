@@ -170,10 +170,10 @@ p {
     font-size: 3em;
 }
 
-iframe {
-    margin-left: 20%;
+#resume {
     width: 60%;
-    height: 1150px;
+    height: auto;
+    margin-left: 20%;
 }
 
 .info {
@@ -228,6 +228,12 @@ iframe {
 
 .contact-details i {
     font-size: 2em;
+}
+
+embed {
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 @media screen and (max-device-width: 900px) and (orientation:portrait) {
