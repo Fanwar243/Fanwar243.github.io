@@ -2,63 +2,84 @@
 <html>
     <head>
         <title>Farid Anwar</title>
-        <link rel="stylesheet" href="portfolio.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="images/favicon.ico">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;500;900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/37626b1c8a.js" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <div class="header">Pleased to meet you.</div>
-        <nav class="flex-container">
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="resume.html">Resume</a>
-        </nav>
-        <main>
-            <div class="overlay">
-                <h1>My name is Farid.</h1>
-                <p>I'm a front-end web developer eager to learn new technologies. <br>Have a look around.</p>
-            </div>
 
-            <div class="info">
-                <h1>Get in touch.</h1>
-                <ul class="contact-details">
-                    <li>
-                        <span onclick="copy()">
-                            <i class="fas fa-envelope-square" aria-hidden="true"></i> 
-                            <span id="email">faridanwar243@gmail.com</span>
-                            <i class="far fa-copy" id="clipboard"></i>
-                        </span>
-                    </li>
-                    <li>
-                        <span>
-                            <i class="fab fa-github" aria-hidden="true"></i>
-                            <a href="https://github.com/Fanwar243/Fanwar243" target="_blank">Fanwar243</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span onclick="copy()">
-                            <i class="fas fa-phone" aria-hidden="true"></i>
-                            +60193275277
-                        </span>
-                    </li>
-                    <li>
-                        <span>
-                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                            <a href="https://linkedin.com/in/faridanwar243" target="_blank"> LinkedIn</a>
-                        </span>
-                    </li>
-                </ul>
+    <body>
+
+        <header>
+            <h1>Farid's Blog</h1>
+            <h2 class='center'>Front-end Web Developer</h2>
+        </header>
+
+        <button id="openbtn" onclick="openNav()">&#9776;</button>
+
+        <!-- Navbar -->
+        <nav id="nav">
+            <button id="closebtn" onclick="closeNav()">&times;</button>
+            <div id="links">
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a id="darkmode" onclick="darkmode()">☾</a>
             </div>
-            
+        </nav>
+
+        <section id="about" class="flex-container">
+            <h1>About Me</h1>
+            <article>
+                <p>I am a STEM undergraduate and self-taught
+                    programmer with a passion in frontend web development. 
+                </p>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming languages: HTML/CSS, JavaScript, Python</li>
+                    <li>Technologies: React.js, Git</li>
+                </ul>
+            </article>
+        </section>
+
+        <main id="projects" class="flex-container">
+            <h1>Projects</h1>
+
+            <article>
+                <h2>Personal Blog</h2>
+                <img>
+            </article>
+
+            <article>
+                <h2>Polyweb: Simulating polymerisation with Python</h2>
+                <img>
+            </article>
+
+            <article>
+               <h2>Project 3</h2>
+                <img>
+            </article> 
+
         </main>
-        <script>
-            function copy() {
-                copyText = document.getElementById("email");
-                copyText.select();
-                copyText.setSelectionRange(0, 99999);
-                document.execCommand("copy");
-            }
-        </script>
+
+        <section id="contact" class="flex-container">
+            <h1>Contact</h1>
+            <article>
+                <ul>
+                    <li>Location: London, UK</li>
+                    <li>Mobile: +44(0)7508245917</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/faridanwar243/">linkedin.com/in/faridanwar243/</a></li>
+                    <li>GitHub: <a href="https://github.com/Fanwar243">Fanwar243</a></li>
+                </ul>
+             </article>
+        </section>
+
+        <footer>
+            Farid Anwar's portfolio website.
+        </footer>
+
+        <script src='blogscript.js'></script>
     </body>
 </html>
