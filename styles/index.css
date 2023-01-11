@@ -6,7 +6,7 @@ html, body {
 }
 
 body {
-    font-family: 'Piazzolla', Arial, Helvetica, serif;
+    font-family: "Segoe UI", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
     background-color: #F4EBD0;
     background-size: 40%;
@@ -56,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e2c58f;
+    background-color: #2f6fa1;
 }
 
 nav a:active {

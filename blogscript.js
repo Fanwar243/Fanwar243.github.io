@@ -96,7 +96,7 @@ function darkmode() {
         inDarkMode = false;
 
         document.getElementById("darkmode").innerHTML = "☾";
-        document.getElementsByTagName("body")[0].style.backgroundColor = "#F4EBD0";
+        document.getElementsByTagName("body")[0].style.backgroundColor = "#F4EBD0"; 
         document.getElementsByTagName("body")[0].style.color = "#122620";
         headings.forEach((heading) => {
             heading.style.opacity = "100%";
@@ -108,8 +108,7 @@ function darkmode() {
             list.style.opacity = "100%";
         })
         
-        //document.getElementById("nav").style.backgroundColor = "#F4EBD0";
-        document.getElementById("links").style.backgroundColor = "#D6AD60";
+        document.getElementById("links").style.backgroundColor = "#1171ba";
         document.getElementById("links").style.boxShadow = "2px 2px 8px 2px grey";
 
         document.getElementById("openbtn").style.color = "#D6AD60";
